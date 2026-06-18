@@ -1,68 +1,70 @@
-<!-- Once you've changed your CSS (or any file) in VS Code, updating GitHub is just 3 commands.
+# 🎯 Number Guessing Game
 
-Example
+A simple and interactive Number Guessing Game built using **HTML, CSS, and JavaScript**.
 
-Suppose you change:
+## 📌 Project Overview
 
-#wrapper {
-  background-color: #474747;
-}
+The game generates a random number between **1 and 100**, and the player has **10 attempts** to guess the correct number.
 
-to
+After each guess, the game provides feedback indicating whether the guessed number is too high or too low. The game keeps track of previous guesses and remaining attempts.
 
-#wrapper {
-  background-color: #1e293b;
-}
+## 🚀 Features
 
-Save the file (Ctrl + S).
+* Random number generation between 1 and 100
+* 10 guessing attempts
+* Displays previous guesses
+* Shows remaining attempts
+* High/Low hints after each guess
+* Game Over message after all attempts are used
+* Restart game functionality
+* Responsive and user-friendly interface
 
-Step 1: Check changes
-git status
+## 🛠️ Technologies Used
 
-You'll see:
+* HTML5
+* CSS3
+* JavaScript (ES6)
 
-modified: style.css
-Step 2: Add and commit
-git add .
-git commit -m "Updated website colors"
-Step 3: Push to GitHub
-git push
 
-Done! ✅
+## ▶️ How to Run
 
-GitHub will automatically update with your latest code.
+1. Clone the repository:
 
-Your daily workflow
+git clone https://github.com/Harsh-1324/Number-Guessing-Game.git
 
-Every time you make changes:
+2. Open the project folder.
 
-git status
-git add .
-git commit -m "Describe what you changed"
-git push
+3. Open `index.html` in your browser or run it using the VS Code Live Server extension.
 
-Examples:
+## 🎮 How to Play
 
-git commit -m "Changed button colors"
-git commit -m "Improved game UI"
-git commit -m "Fixed restart game bug"
-Check differences before pushing
+1. Enter a number between 1 and 100.
+2. Click **Submit Guess**.
+3. Read the hint displayed by the game.
+4. Continue guessing until you find the correct number.
+5. If all attempts are exhausted, start a new game.
 
-To see exactly what changed:
+## 📚 Learning Outcomes
 
-git diff
-View commit history
-git log --oneline
+Through this project, I learned:
 
-You'll see something like:
+* DOM Manipulation
+* Event Handling
+* JavaScript Functions
+* Conditional Statements
+* Arrays
+* Git & GitHub Workflow
+* Project Structure Management
 
-6f3c4d2 Add README and gitignore
-2ea32b3 Add JavaScript game logic
-8d75518 Initial commit
-Quickest update command
 
-After editing files:
+## ⭐ Future Improvements
 
-git add .
-git commit -m "UI improvements"
-git push -->
+* Add difficulty levels
+* Add score tracking
+* Add timer functionality
+* Improve UI/UX design
+* Make the game fully responsive
+
+---
+
+If you like this project, consider giving it a ⭐ on GitHub.
