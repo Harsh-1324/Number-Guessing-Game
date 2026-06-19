@@ -56,15 +56,6 @@ Through this project, I learned:
 * Git & GitHub Workflow
 * Project Structure Management
 
-
-## ⭐ Future Improvements
-
-* Add difficulty levels
-* Add score tracking
-* Add timer functionality
-* Improve UI/UX design
-* Make the game fully responsive
-
 ---
 
 If you like this project, consider giving it a ⭐ on GitHub.
