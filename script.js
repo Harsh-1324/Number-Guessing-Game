@@ -63,7 +63,24 @@ function displayGuess(guess) {
 }
 
 function displayMessage(message) {
-  lowOrHi.innerHTML = `<h2>${message}</h2>`;
+
+  const winMessages = [
+    "🎉 You guessed it right! Unlike your ex, this number chose you.",
+    "💍 You found the number faster than your future partner.",
+    "❤️ Cupid approves this guess.",
+    "👑 Main Character Energy Activated.",
+    "🔥 Are you psychic or just lucky today?"
+  ];
+
+  if (message === "You guessed it right") {
+    lowOrHi.innerHTML =
+      `<h2>${winMessages[Math.floor(Math.random() * winMessages.length)]}</h2>`;
+
+    lowOrHi.className = "lowOrHi alert-success";
+  } else {
+    lowOrHi.innerHTML = `<h2>${message}</h2>`;
+    lowOrHi.className = "lowOrHi alert-error";
+  }
 }
 
 function endGame() {

@@ -130,3 +130,117 @@ p {
   text-align: center;
   margin: 10px;
 }
+
+/* ===== Submit Button Upgrade ===== */
+#subt {
+  background-color: #28a745;
+  font-weight: bold;
+}
+
+#subt:hover {
+  background-color: #34c759;
+  box-shadow: 0 0 12px rgba(52, 199, 89, 0.4);
+}
+
+/* ===== Wrong Guess Alert ===== */
+.wrong-alert {
+  background-color: rgba(255, 0, 0, 0.15);
+  border: 2px solid #ff4d4d;
+  color: #ff6b6b;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  animation: shake 0.4s ease;
+}
+
+/* ===== Correct Guess Alert ===== */
+.success-alert {
+  background-color: rgba(0, 255, 0, 0.15);
+  border: 2px solid #32cd32;
+  color: #7CFC00;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  animation: pop 0.5s ease;
+}
+
+/* ===== Animations ===== */
+@keyframes shake {
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Alert Box */
+.alert-box {
+  width: 85%;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  animation: popIn 0.4s ease;
+}
+
+/* Wrong Guess */
+.alert-error {
+  background-color: #4d1616;
+  border: 2px solid #ff4d4d;
+  color: #ffb3b3;
+}
+
+/* Correct Guess */
+.alert-success {
+  background-color: #163d1f;
+  border: 2px solid #32cd32;
+  color: #9cff9c;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.alert-success {
+  background: #163d1f;
+  border: 2px solid #32cd32;
+  color: #9cff9c;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 15px auto;
+  width: 80%;
+  font-weight: bold;
+}
+
+.alert-error {
+  background: #4d1616;
+  border: 2px solid #ff4d4d;
+  color: #ffb3b3;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 15px auto;
+  width: 80%;
+  font-weight: bold;
+}
